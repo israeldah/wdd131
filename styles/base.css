@@ -31,8 +31,12 @@ nav a {
 	color: #fff;
 	text-decoration: none;
 }
+nav a:hover {
+  color: yellow;
+  text-decoration: underline;
+}
 
-main h1 {
+h1 {
     font-weight: 200;
     font-size: 20pt;
     text-align: center;
@@ -47,9 +51,10 @@ main h1 {
     height: 420px;
     border: 1px solid #36454f;
 }
-.above h4 {
+.card h2 {
     padding: .5rem;
-    color: #36454f;
+    color: #222;
+    font-weight: 400;
     text-align: center;
     background-color: #1bcd7c;
 }
@@ -60,7 +65,7 @@ main h1 {
     padding: 2rem;
     font-weight: 500;
 }
-.above h5 {
+.above h3 {
     text-align: center;
     padding: .5rem;
     border-bottom: 1px solid white;
@@ -85,20 +90,6 @@ main h1 {
     font-weight: 500;
 }
 
-.card2 {
-    max-width: 35%;
-    background-color: lab(88.12% 0 -0.01);
-    border-radius: 5px;
-    overflow: hidden;
-    height: 420px;
-    border: 1px solid #36454f;
-}
-.card2>div>h4 {
-    text-align: center; 
-    background-color: #1bcd7c;
-    padding: .5rem;
-    color: #36454f;
-}
 .list>ul {
   display: flex;
   flex-direction: column;
@@ -131,3 +122,4 @@ footer {
 #lastModified {
   color: rgba(255, 255, 0, 0.79);
 }
+
