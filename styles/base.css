@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header span {
+	background-color: lab(88.12% 0 -0.01);
+	padding: .5rem;
+	border: 1px solid rgb(0 0 0 / 10%);
+	font-size: 2rem;
+	text-align: center;
+    display: block;
+}
+
+nav {
+	background-color: #36454f;
+	
+}
+nav ul {
+	list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: .7rem;
+}
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+main h1 {
+    font-weight: 200;
+    font-size: 20pt;
+    text-align: center;
+    padding: 1rem;
+}
+.card {
+    display: flex;
+    max-width: 60%;
+    background-color: lab(88.12% 0 -0.01);
+    border-radius: 5px;
+    overflow: hidden;
+    height: 420px;
+    border: 1px solid #36454f;
+}
+.above h4 {
+    padding: .5rem;
+    color: #36454f;
+    text-align: center;
+    background-color: #1bcd7c;
+}
+.above>div {
+    display: flex;
+    gap: 4rem;
+    color: #36454f;
+    padding: 2rem;
+    font-weight: 500;
+}
+.above h5 {
+    text-align: center;
+    padding: .5rem;
+    border-bottom: 1px solid white;
+    width: 500px;
+    margin-left: 3rem;
+}
+.flag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+.flag img {
+    border: 1px solid #36454f;
+}
+.sep {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    color: #36454f;
+    font-weight: 500;
+}
+
+.card2 {
+    max-width: 35%;
+    background-color: lab(88.12% 0 -0.01);
+    border-radius: 5px;
+    overflow: hidden;
+    height: 420px;
+    border: 1px solid #36454f;
+}
+.card2>div>h4 {
+    text-align: center; 
+    background-color: #1bcd7c;
+    padding: .5rem;
+    color: #36454f;
+}
+.list>ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;    
+  align-items: flex-start;  
+  padding-left: 2rem;
+  padding-top: 30%;
+  gap: .5rem;
+}
+.list a {
+    text-decoration: none;
+}
+
+.cards {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    justify-content: center;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #36454f;
+    color: white;
+    margin-top: 1rem;
+}
+#lastModified {
+  color: rgba(255, 255, 0, 0.79);
+}
