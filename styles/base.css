@@ -1,7 +1,7 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -9,31 +9,34 @@ body {
 }
 
 header span {
-	background-color: lab(88.12% 0 -0.01);
-	padding: .5rem;
-	border: 1px solid rgb(0 0 0 / 10%);
-	font-size: 2rem;
-	text-align: center;
+    background-color: lab(88.12% 0 -0.01);
+    padding: .5rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    font-size: 2rem;
+    text-align: center;
     display: block;
 }
 
 nav {
-	background-color: #36454f;
-	
+    background-color: #36454f;
+
 }
+
 nav ul {
-	list-style-type: none;
+    list-style-type: none;
     display: flex;
     justify-content: space-around;
     padding: .7rem;
 }
+
 nav a {
-	color: #fff;
-	text-decoration: none;
+    color: #fff;
+    text-decoration: none;
 }
+
 nav a:hover {
-  color: yellow;
-  text-decoration: underline;
+    color: yellow;
+    text-decoration: underline;
 }
 
 h1 {
@@ -42,22 +45,25 @@ h1 {
     text-align: center;
     padding: 1rem;
 }
+
 .card {
     display: flex;
-    max-width: 60%;
+    width: 100%;
     background-color: lab(88.12% 0 -0.01);
     border-radius: 5px;
     overflow: hidden;
     height: 420px;
     border: 1px solid #36454f;
 }
+
 .card h2 {
     padding: .5rem;
-    color: #222;
+    color: #fff;
     font-weight: 400;
     text-align: center;
-    background-color: #1bcd7c;
+    background-color: #36454f;
 }
+
 .above>div {
     display: flex;
     gap: 4rem;
@@ -65,6 +71,7 @@ h1 {
     padding: 2rem;
     font-weight: 500;
 }
+
 .above h3 {
     text-align: center;
     padding: .5rem;
@@ -72,6 +79,7 @@ h1 {
     width: 500px;
     margin-left: 3rem;
 }
+
 .flag {
     display: flex;
     flex-direction: column;
@@ -79,9 +87,11 @@ h1 {
     align-items: center;
     gap: .5rem;
 }
+
 .flag img {
     border: 1px solid #36454f;
 }
+
 .sep {
     display: flex;
     gap: 2rem;
@@ -91,24 +101,28 @@ h1 {
 }
 
 .list>ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;    
-  align-items: flex-start;  
-  padding-left: 2rem;
-  padding-top: 30%;
-  gap: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 2rem;
+    padding-top: 30%;
+    gap: .5rem;
 }
+
 .list a {
     text-decoration: none;
 }
 
 .cards {
-    display: flex;
+    display: grid;
+    grid-template-columns: 70% 30%;
     gap: 2rem;
-    width: 100%;
-    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
 }
+
 footer {
     display: flex;
     flex-direction: column;
@@ -119,7 +133,7 @@ footer {
     color: white;
     margin-top: 1rem;
 }
-#lastModified {
-  color: rgba(255, 255, 0, 0.79);
-}
 
+#lastModified {
+    color: rgba(255, 255, 0, 0.79);
+}
