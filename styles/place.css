@@ -26,7 +26,7 @@ header {
     border-bottom: 1.5rem solid var(--third);
 }
 
-.hero>picture{
+main .hero>picture{
     background-color: var(--third);
 }
 
