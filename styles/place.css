@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Google Sans", sans-serif;
+}
+
+:root {
     --primary: #FF7900;
     --secondary: #fff;
     --third: #009E60;
@@ -26,7 +29,7 @@ header {
     border-bottom: 1.5rem solid var(--third);
 }
 
-main .hero>picture{
+main .hero>picture {
     background-color: var(--third);
 }
 
@@ -39,13 +42,13 @@ main .hero>picture{
 
 .container-data,
 .container-weather {
-    background-color:var(--secondary);
+    background-color: var(--secondary);
     padding-bottom: 1.5rem;
     border-bottom: 1px solid #ddd;
 }
 
-.container-data > h2,
-.container-weather > h2 {
+.container-data>h2,
+.container-weather>h2 {
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -89,4 +92,3 @@ footer {
 footer #lastModified {
     color: yellow;
 }
-
