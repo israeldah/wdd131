@@ -30,35 +30,51 @@ main .hero>picture{
     background-color: var(--third);
 }
 
-.container {
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.container-data,
+.container-weather {
     background-color:var(--secondary);
     padding-bottom: 1.5rem;
     border-bottom: 1px solid #ddd;
 }
 
-.container>h2 {
+.container-data > h2,
+.container-weather > h2 {
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-.container img {
+.container-data img,
+.container-weather img {
     padding-bottom: 2rem;
 }
 
-.info {
+.info-data,
+.info-weather {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
 }
 
-.info-left {
+.info-left-data,
+.info-left-weather {
     font-weight: 700;
     display: flex;
     flex-direction: column;
     gap: .8rem;
 }
 
-.info-right {
+.info-right-data,
+.info-right-weather {
     display: flex;
     flex-direction: column;
     gap: .8rem;
@@ -73,3 +89,4 @@ footer {
 footer #lastModified {
     color: yellow;
 }
+
