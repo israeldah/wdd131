@@ -9,11 +9,53 @@
     <meta name="author" content="Israel Dah">
     <title>WDD 131 – Country Page – Israel Dah</title>
     <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
     <script src="scripts/place.js" defer></script>
 </head>
 
 <body>
-
+    <header>
+        <h2>Côte d'Ivoire</h2>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/elephant-large.webp" media="(min-width: 550)">
+                <img src="images/elephant-small.webp" alt="Elephant in a forest">
+            </picture>
+        </div>
+        <div class="container">
+            <h2>Data</h2>
+            <div class="info">
+                <p><span>Area: </span>322,462 sq km</p>
+                <p><span>Population: </span>33 142 040</p>
+                <p><span>Capital: </span>Yamoussoukro</p>
+                <p><span>Languages: </span>French</p>
+                <p><span>Currency: </span>West African CFA franc</p>
+                <p><span>Time Zone: </span>GMT+0</p>
+                <p><span>Calling Code: </span>+225</p>
+                <p><span>Internet TLD: </span>.ci</p>
+            </div>
+        </div>
+        <div class="container">
+            <h2>weather</h2>
+            <img src="images/weather.png" alt="Weather icon" width="30">
+            <div class="info">
+                <p><span>Temperature: </span>Highs around 35°C (95°F), lows around 23°C</p>
+                <p><span>Condition: </span>Sunny, with some cloudy periods and a slight, 10-20% chance of rain</p>
+                <p><span>Wind: </span>Light, typically 3 to 10 mph</p>
+                <p><span>Wind Chill: </span>No wind chill effect</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> Evangelis Israel Dah 🦅 Côte d'Ivoire</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
