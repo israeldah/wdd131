@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #3CAEA8;
+    --secondary: #674815;
+    --third: #B47E3C;
+}
+
+body {
+    background-color: var(--primary);
+    color: #fff;
+    font-family: "Google Sans", sans-serif;
+}
+
+h1,
+h2 {
+    color: #133a15;
+}
+
+section {
+    border-left: 4px solid var(--secondary);
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+}
