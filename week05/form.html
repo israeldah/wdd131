@@ -4,90 +4,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is an HTML form with a confirmation page">
+    <meta name="description"
+        content="Submit a detailed product review including rating, installation date, useful features, and optional written feedback.">
     <meta name="author" content="Evangelis Israel Dah">
-    <title>Form | WDD131</title>
+    <title>Product Review | WDD131</title>
+
     <link rel="stylesheet" href="styles/form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
     <script src="scripts/form.js" defer></script>
 </head>
 
 <body>
+
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
     <main>
-        <div class="container">
-            <h1>Product Review</h1>
-            <div class="form">
-                <form action="review.html" method="get">
-                    <label for="product">Product Name</label><br>
+        <div class="form">
+            <form action="review.html" method="get">
 
-                    <select id="product" name="product" required>
-                        <option value="" disabled selected>Select a Product ...</option>
-                    </select>
-                    <fieldset>
-                        <legend>Overall Rating</legend>
-                        <div class="rate">
-                            <div class="stars">
-                                <label for="star1">☆</label>
-                                <label for="star2">☆☆</label>
-                                <label for="star3">☆☆☆</label>
-                                <label for="star4">☆☆☆☆</label>
-                                <label for="star5">☆☆☆☆☆</label>
-                            </div>
-                            <div class="radio">
-                                <input type="radio" id="star1" name="rating" value="1" required>
-                                <input type="radio" id="star2" name="rating" value="2">
-                                <input type="radio" id="star3" name="rating" value="3">
-                                <input type="radio" id="star4" name="rating" value="4">
-                                <input type="radio" id="star5" name="rating" value="5">
-                            </div>
+                <label for="product">Product Name</label>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+
+                <fieldset>
+                    <legend>Overall Rating</legend>
+
+                    <div class="rating-container">
+
+                        <div class="rating-item">
+                            <span>☆</span>
+                            <input type="radio" name="rating" value="1" required>
                         </div>
-                    </fieldset>
 
-                    <label for="installDate">Date of Installation</label><br>
-                    <input type="date" id="installDate" name="installDate" required>
+                        <div class="rating-item">
+                            <span>☆☆</span>
+                            <input type="radio" name="rating" value="2" required>
+                        </div>
 
-                    <p>Which features did you find useful in the product</p><br>
-                    <p>Check all that apply</p>
+                        <div class="rating-item">
+                            <span>☆☆☆</span>
+                            <input type="radio" name="rating" value="3" required>
+                        </div>
 
-                    <label for="feature1">
-                        <input type="checkbox" id="feature1" name="features" value="durability">
-                        Durability
-                    </label><br>
+                        <div class="rating-item">
+                            <span>☆☆☆☆</span>
+                            <input type="radio" name="rating" value="4" required>
+                        </div>
 
-                    <label for="feature2">
-                        <input type="checkbox" id="feature2" name="features" value="ease-of-use">
-                        Ease of Use
-                    </label><br>
+                        <div class="rating-item">
+                            <span>☆☆☆☆☆</span>
+                            <input type="radio" name="rating" value="5" required>
+                        </div>
 
-                    <label for="feature3">
-                        <input type="checkbox" id="feature3" name="features" value="performance">
-                        Performance
-                    </label><br>
+                    </div>
+                </fieldset>
 
-                    <label for="feature4">
-                        <input type="checkbox" id="feature4" name="features" value="design">
-                        Design
-                    </label>
+                <label for="installDate">Date of Installation</label>
+                <input type="date" id="installDate" name="installDate" required>
 
-                    <label for="review">Written Review<span>(Optional)</span></label><br>
-                    <textarea id="review" name="review" rows="5" cols="40"></textarea>
+                <p>Which features did you find useful?</p>
+                <p class="small">Check all that apply</p>
 
-                    <label for="username">Your Name<span>(Optional)</span></label><br>
-                    <input type="text" id="username" name="username">
+                <label class="checkbox">
+                    <input type="checkbox" name="features" value="durability">
+                    Durability
+                </label>
 
-                    <input type="submit" value="Post Review">
-                </form>
-            </div>
+                <label class="checkbox">
+                    <input type="checkbox" name="features" value="ease-of-use">
+                    Ease of Use
+                </label>
+
+                <label class="checkbox">
+                    <input type="checkbox" name="features" value="performance">
+                    Performance
+                </label>
+
+                <label class="checkbox">
+                    <input type="checkbox" name="features" value="design">
+                    Design
+                </label>
+
+                <label for="review">Written Review <span>(Optional)</span></label>
+                <textarea id="review" name="review" rows="4"></textarea>
+
+                <label for="username">Your Name <span>(Optional)</span></label>
+                <input type="text" id="username" name="username">
+
+                <input type="submit" value="Post Review">
+
+            </form>
         </div>
     </main>
+
     <footer>
-        <p><span id="currentyear"></span> Evangelis Israel Dah ⚜️ Côte d'Ivoire</p>
+        <p>&copy; <span id="currentyear"></span> Evangelis Israel Dah ⚜️ Côte d'Ivoire</p>
         <p id="lastModified"></p>
     </footer>
+
 </body>
 
 </html>
