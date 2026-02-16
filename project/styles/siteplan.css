@@ -1,4 +1,3 @@
-
 *,
 *::before,
 *::after {
@@ -19,13 +18,15 @@
 }
 
 body {
-    font-family: Roboto, Arial, sans-serif;
+    font-family: "Inter", sans-serif;
     line-height: 1.6;
     background: var(--light);
     color: #222;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: var(--dark);
     margin-bottom: 0.5rem;
 }
